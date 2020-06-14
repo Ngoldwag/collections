@@ -39,6 +39,14 @@ public class Person {
     // TODO -- implement toString with String.format 10 points
     @Override
     public String toString() {
-        return null;
+       String person= "Person{" +"\n"+
+                "name=" + name + "\n"+
+                "gender=" + gender + "\n"+
+                "age=" + getAge() +"\n"+
+                ", birthDate=" + birthDate+ "\n"+
+                "email=" + emailAddress.toString() + "\n"+
+                '}';
+        String str2 = String.format("%s", person);
+        return str2;
     }
 }
